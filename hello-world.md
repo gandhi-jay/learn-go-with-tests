@@ -10,6 +10,8 @@ Make a directory in the following path `$GOPATH/src/github.com/{your-user-id}/he
 
 So if you're on a unix based OS and your username is "bob" and you are happy to stick with Go's conventions about `$GOPATH` (which is the easiest way of setting up) you could run `mkdir -p $GOPATH/src/github.com/bob/hello`.
 
+For subsequent chapters, you can make a new folder with whatever name you like to put the code in e.g `$GOPATH/src/github.com/{your-user-id}/integers` for the next chapter might be sensible. Some readers of this book like to make an enclosing folder for all the work such as "learn-go-with-tests/hello". In short, it's up to you how you structure your folders.
+
 Create a file in this directory called `hello.go` and write this code. To run it type `go run hello.go`.
 
 ```go
@@ -105,6 +107,8 @@ We will later explore the difference between methods and functions.
 Another quality of life feature of Go is the documentation. You can launch the docs locally by running `godoc -http :8000`. If you go to [localhost:8000/pkg](http://localhost:8000/pkg) you will see all the packages installed on your system.
 
 The vast majority of the standard library has excellent documentation with examples. Navigating to [http://localhost:8000/pkg/testing/](http://localhost:8000/pkg/testing/) would be worthwhile to see what's available to you.
+
+If you don't have `godoc` command, then maybe you are using the newer version of Go (1.13 or later) which is [no longer including `godoc`](https://golang.org/doc/go1.13#godoc). You can manually install it with `go get golang.org/x/tools/cmd/godoc`.
 
 ### Hello, YOU
 
